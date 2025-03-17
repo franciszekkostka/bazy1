@@ -1,0 +1,30 @@
+{
+	"name": "prezentacja_bazy",
+	"version": "1.0.0",
+	"description": "",
+	"type": "module",
+	"scripts": {
+		"p:step1": "npx prisma studio",
+		"p:step2": "npx prisma migrate dev --name init",
+		"p:step3": "npx prisma generate",
+		"p:step4": "npx tsx ./prisma/scripts/seed.ts",
+		"d:step1": "npx drizzle-kit push",
+		"d:step2": "npx drizzle-kit studio",
+		"d:step3": "npx tsx ./drizzle/scripts/script.ts"
+	},
+	"keywords": [],
+	"author": "Franciszek Kostka",
+	"license": "ISC",
+	"dependencies": {
+		"@prisma/client": "^6.5.0",
+		"dotenv": "^16.4.7",
+		"drizzle-orm": "^0.40.0",
+		"pg": "^8.14.0"
+	},
+	"devDependencies": {
+		"@types/node": "^22.13.10",
+		"@types/pg": "^8.11.11",
+		"drizzle-kit": "^0.30.5",
+		"tsx": "^4.19.3"
+	}
+}
