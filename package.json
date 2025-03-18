@@ -8,7 +8,7 @@
 		"p:step2": "npx prisma migrate dev --name init",
 		"p:step3": "npx prisma generate",
 		"p:step4": "npx tsx ./prisma/scripts/seed.ts",
-		"d:step1": "npx drizzle-kit push",
+		"d:step1": "npx drizzle-kit push", 
 		"d:step2": "npx drizzle-kit studio",
 		"d:step3": "npx tsx ./drizzle/scripts/script.ts"
 	},
